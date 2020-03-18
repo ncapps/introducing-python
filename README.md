@@ -20,7 +20,11 @@
 ### Chapter 5. Text Strings
  - Strings in Python are `immutable`
  - You can extract a *substring* from a string by using a *slice*
- - 
+
+### Chapter 6. Loops with while and for
+  - Python makes frequent use of *iterators*. Iterators make it possible to traverse data structures without knowing how large they are or how they are implemented.
+  - `while` and `for` loops have an optional `else` that is executed if the loop completes without calling `break`
+  - `range()` returns an *iterable* object, so you need to step through the values with `for ... in` or convert the object to a sequence like a list
 
 ## Attribution
 *Introducing Python* by Bill Lubanovic (O’Reilly). Copyright 2020 Bill Lubanovic, 978-1-492-05136-7.
