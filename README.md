@@ -13,5 +13,14 @@
   - `0o` or `0O` for *octal* (base 8)
   - `0x` or `0X` for *hex* (base 16)
 
+### Chapter 4. Choose with if
+  - The recommended maximum line length is 80 characters
+  - Whenever you need to make a lot of comparisons separate by `or`, use the *membership operator* `in`
+
+### Chapter 5. Text Strings
+ - Strings in Python are `immutable`
+ - You can extract a *substring* from a string by using a *slice*
+ - 
+
 ## Attribution
 *Introducing Python* by Bill Lubanovic (O’Reilly). Copyright 2020 Bill Lubanovic, 978-1-492-05136-7.
