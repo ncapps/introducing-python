@@ -26,5 +26,27 @@
   - `while` and `for` loops have an optional `else` that is executed if the loop completes without calling `break`
   - `range()` returns an *iterable* object, so you need to step through the values with `for ... in` or convert the object to a sequence like a list
 
+## Chapter 7. Tuples and lists
+  - Python has three sequence structures: *strings*, *tuples*, *lists*
+  - Tuples are immutable, Lists are mutable
+  - Use a *set* if you want to track unique values but do not care about order
+  - `list()` function also converts other *iterable* data types to lists (e.g., tuples, strings, sets, and dictionaries)
+  - The `reverse()` function changes a list, slices do not change the list
+  - `del` is a Python *statement* not a list method. It detaches a name from a Python object and can free up the object's memory if that name were the last reference to it
+  - Get an item by offset and delete it with `pop(offset)`
+  - The Pythonic way to check for existence of a value in a list is using `in`
+  - `join()` *is the opposite of* `split()`
+  - The list method `sort()` sorts the list itself, *in place*
+  - The general function `sorted()` returns a sorted *copy* of the list
+  - You can *copy* the values of a list to an independent list using:
+    - `copy()` method
+    - `list()` conversion function
+    - list slice `[:]`
+    - `deepcopy()` can handle deeply nested lists, dictionaries
+  - Iterate over multiple sequences in paralle by using the `zip()` function. The return value from `zip()` is an iterable value which can be turned into a list or tuple
+  - The simplest form of *list comprehension* looks like: `[expression for item in iterable]`
+  - A list comprehension can include a conditional expression: `[expression for item in iterable if condition]`
+
+
 ## Attribution
 *Introducing Python* by Bill Lubanovic (O’Reilly). Copyright 2020 Bill Lubanovic, 978-1-492-05136-7.
