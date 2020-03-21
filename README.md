@@ -47,6 +47,21 @@
   - The simplest form of *list comprehension* looks like: `[expression for item in iterable]`
   - A list comprehension can include a conditional expression: `[expression for item in iterable if condition]`
 
+## Chapter 8. Dictionaries and Sets
+  - Get an item by `[key]` or with `get()`
+  - In Python 3, you need to use the `list()` function to turn the results of `keys()`, `values()` and `items()` into normal Python lists
+  - Combine dictionaries with `{**a,**b}` or `update()`
+  - Dictionary comprehension: `{key_expression : value_expression for expression in iterable}`
+  - Dictionary comprehension with conditional: `{key_expression : value_expression for expression in iterable if condition}`
+  - use `set()` to print an empty set
+  - When you give `set()` a dictionary, it uses only the keys
+  - Use *set intersection operator* with `&` : `{a, b, c} & {a, b}`
+  - Use *set union operator* with `|` : `{a, b, c} | {a, b, d}`
+  - Use *set difference operator* with `-` : `{a, b, c} - {a, b, d}`, members of the first set but not the second
+  - Use *set exclusive operator* with `^` : `{a, b, c} ^ {a, b, d}`, items in one set or the other, but not both
+  - Use *set subset operator* with `<` : `{a, b, c} <= {a, b, c, d}`, all members of the first set are also in the second set
+  - Set comprehension: `{ expression for expression in iterable }`, condition test: `{ expression for expression in iterable if condition }`
+  - Create an immutable set with `frozenset()`
 
 ## Attribution
 *Introducing Python* by Bill Lubanovic (O’Reilly). Copyright 2020 Bill Lubanovic, 978-1-492-05136-7.
