@@ -86,7 +86,11 @@
   - You can add `@decorator_name` before the function definition that you want to decorate
   - Recursion is useful when you're dealing with "uneven" data, like lists of lists of lists
   - Use `try` to wrap your code, and `except` to provide the error handling
-  - 
+
+## Chapter 10. Objects and Classes
+  - An *object* is a custom data structure containing both data (variables, called *attributes*) and code (functions called *methods*)
+  - You create an object from a class by caling the class name as though it were a function
+  - Use the `__init__()` method to assign object attributes at creation time. The first parameter should be named `self`. The `self` argument specifies that it refers to the individual object itself.
 
 ## Attribution
 *Introducing Python* by Bill Lubanovic (O’Reilly). Copyright 2020 Bill Lubanovic, 978-1-492-05136-7.
