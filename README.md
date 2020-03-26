@@ -91,6 +91,17 @@
   - An *object* is a custom data structure containing both data (variables, called *attributes*) and code (functions called *methods*)
   - You create an object from a class by caling the class name as though it were a function
   - Use the `__init__()` method to assign object attributes at creation time. The first parameter should be named `self`. The `self` argument specifies that it refers to the individual object itself.
+  - Use *properties* for object attribute privacy
+  - A property can also return a *computed value*
+  - Attributes that should not be visible outside of their class definition should begin with two underscores (__)
+  - The first parameter of an *instance methods* should be `self`
+  - A *class method* is preceded by a `@classmethod` decorator. The Python tradition is to call the parameter `cls`
+  - A *static method* is preceded by a `@staticmethod` decorator with no initial `self` or `cls` parameter
+  - Favor *aggregation* and *composition* over *inheritance*
+  - Objects are useful when you need a number of individual instances that have similar behavior (methods), but differ in their internal states (attributes)
+  - Classes support inheritance, modules don't
+  - Use the simplest solution to the problem. A dictionary, list, or tuple is simpler, smaller, and faster than a module, which is usually simpler than a class
+  - A *named tuple* looks and acts like an immutable object. It is more space and time efficient than objects. You can also access attributes using dot notation
 
 ## Attribution
 *Introducing Python* by Bill Lubanovic (O’Reilly). Copyright 2020 Bill Lubanovic, 978-1-492-05136-7.
