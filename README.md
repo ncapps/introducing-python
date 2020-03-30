@@ -89,7 +89,7 @@
 
 ## Chapter 10. Objects and Classes
   - An *object* is a custom data structure containing both data (variables, called *attributes*) and code (functions called *methods*)
-  - You create an object from a class by caling the class name as though it were a function
+  - You create an object from a class by calling the class name as though it were a function
   - Use the `__init__()` method to assign object attributes at creation time. The first parameter should be named `self`. The `self` argument specifies that it refers to the individual object itself.
   - Use *properties* for object attribute privacy
   - A property can also return a *computed value*
@@ -102,6 +102,17 @@
   - Classes support inheritance, modules don't
   - Use the simplest solution to the problem. A dictionary, list, or tuple is simpler, smaller, and faster than a module, which is usually simpler than a class
   - A *named tuple* looks and acts like an immutable object. It is more space and time efficient than objects. You can also access attributes using dot notation
+
+## Chapter 11. Modules, Packages, and Goodies
+  - A *module* is just a file of Python code
+  - Import using an *alias* : `import fast as f`
+  - Import parts of a module : `from fast import f`
+  - You can organize modules into file and module hierarchies called *packages*. A package is just a subdirectory that contains *.py* files
+  - Module search path defined in `sys.path`
+  - Use `.` and `..` notation for *relative* path imports
+  - The `setdefault()` function is like `get()`. but it also assigns an item to the dictionary if the key is missing
+  - `defaultdict()` is a function that returns the value to be assigned to a missing key
+  - Pretty print with `from pprint import pprint`
 
 ## Attribution
 *Introducing Python* by Bill Lubanovic (O’Reilly). Copyright 2020 Bill Lubanovic, 978-1-492-05136-7.
